@@ -11,7 +11,7 @@ overrides:
 
 patchedDependencies:
   '@mercuryworkshop/bare-mux@2.1.9':
-    hash: p2h2pod4rmljbocdwd5lo4pw64
+    hash: 45d83f8c4aa640239d1841ae9cd7d9af438b01465829b1257e3d5e2d0744c367
     path: patches/@mercuryworkshop__bare-mux@2.1.9.patch
 
 importers:
@@ -20,13 +20,13 @@ importers:
     dependencies:
       '@mercuryworkshop/bare-mux':
         specifier: ^2.1.9
-        version: 2.1.9(patch_hash=p2h2pod4rmljbocdwd5lo4pw64)
+        version: 2.1.9(patch_hash=45d83f8c4aa640239d1841ae9cd7d9af438b01465829b1257e3d5e2d0744c367)
       '@mercuryworkshop/epoxy-transport':
         specifier: 2.1.28
         version: 2.1.28
       '@mercuryworkshop/libcurl-transport':
-        specifier: ^1.5.2
-        version: 1.5.2
+        specifier: ^2.0.5
+        version: 2.0.5
       '@mercuryworkshop/scramjet':
         specifier: ^1.1.0
         version: 1.1.0
@@ -98,24 +98,28 @@ packages:
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@biomejs/cli-linux-arm64@2.2.2':
     resolution: {integrity: sha512-JfrK3gdmWWTh2J5tq/rcWCOsImVyzUnOS2fkjhiYKCQ+v8PqM+du5cfB7G1kXas+7KQeKSWALv18iQqdtIMvzw==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@biomejs/cli-linux-x64-musl@2.2.2':
     resolution: {integrity: sha512-ZCLXcZvjZKSiRY/cFANKg+z6Fhsf9MHOzj+NrDQcM+LbqYRT97LyCLWy2AS+W2vP+i89RyRM+kbGpUzbRTYWig==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@biomejs/cli-linux-x64@2.2.2':
     resolution: {integrity: sha512-Ogb+77edO5LEP/xbNicACOWVLt8mgC+E1wmpUakr+O4nKwLt9vXe74YNuT3T1dUBxC/SnrVmlzZFC7kQJEfquQ==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@biomejs/cli-win32-arm64@2.2.2':
     resolution: {integrity: sha512-wBe2wItayw1zvtXysmHJQoQqXlTzHSpQRyPpJKiNIR21HzH/CrZRDFic1C1jDdp+zAPtqhNExa0owKMbNwW9cQ==}
@@ -173,8 +177,8 @@ packages:
   '@mercuryworkshop/epoxy-transport@2.1.28':
     resolution: {integrity: sha512-lv/Kfdn37y8ZCXQaIT3Ebj4OSztBqeXdbR9rchbHQBKIw/fNSQJLGNBHV5ScXSzqt7NCwv8ZiZx7urRyk7Ua/Q==}
 
-  '@mercuryworkshop/libcurl-transport@1.5.2':
-    resolution: {integrity: sha512-E0tD/3W6HE99ypc7CStpchU6xs+TP5u2vms/9q/46BShblB2pbRCNeXHBlvXqdz97nh2Xh4A68DryDt5CM29Dg==}
+  '@mercuryworkshop/libcurl-transport@2.0.5':
+    resolution: {integrity: sha512-YkAPEAWTEUZZkEOejmRQJxNHw90+kNQnoiSqa5H2sExHBXXdGSXEtg7/35A53U8MDVaznpAwjVbXRONSsfatzw==}
 
   '@mercuryworkshop/scramjet@1.1.0':
     resolution: {integrity: sha512-T/9GZqAQX42eYr/t6VGR2m9J4BtIuncRkANo8hBVTGskrr522yuhaADhSu+65DYlhUyQnLUjDikuNYzlgv0Ejw==}
@@ -1083,7 +1087,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@mercuryworkshop/bare-mux@2.1.9(patch_hash=p2h2pod4rmljbocdwd5lo4pw64)': {}
+  '@mercuryworkshop/bare-mux@2.1.9(patch_hash=45d83f8c4aa640239d1841ae9cd7d9af438b01465829b1257e3d5e2d0744c367)': {}
 
   '@mercuryworkshop/epoxy-tls@2.1.18-1': {}
 
@@ -1091,13 +1095,13 @@ snapshots:
     dependencies:
       '@mercuryworkshop/epoxy-tls': 2.1.18-1
 
-  '@mercuryworkshop/libcurl-transport@1.5.2':
+  '@mercuryworkshop/libcurl-transport@2.0.5':
     dependencies:
       libcurl.js: 0.7.4
 
   '@mercuryworkshop/scramjet@1.1.0':
     dependencies:
-      '@mercuryworkshop/bare-mux': 2.1.9(patch_hash=p2h2pod4rmljbocdwd5lo4pw64)
+      '@mercuryworkshop/bare-mux': 2.1.9(patch_hash=45d83f8c4aa640239d1841ae9cd7d9af438b01465829b1257e3d5e2d0744c367)
       dom-serializer: 2.0.0
       domhandler: 5.0.3
       domutils: 3.2.2
@@ -1117,7 +1121,7 @@ snapshots:
 
   '@titaniumnetwork-dev/ultraviolet@3.2.10':
     dependencies:
-      '@mercuryworkshop/bare-mux': 2.1.9(patch_hash=p2h2pod4rmljbocdwd5lo4pw64)
+      '@mercuryworkshop/bare-mux': 2.1.9(patch_hash=45d83f8c4aa640239d1841ae9cd7d9af438b01465829b1257e3d5e2d0744c367)
       astring: 1.9.0
       events: 3.3.0
       idb: 8.0.3
